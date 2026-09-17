@@ -1,0 +1,7 @@
+{
+  "name": "TabsSkinColorMod",
+  "version_number": "0.3.4",
+  "website_url": "",
+  "description": "Recolor the skin (body) of Wobblers in the Unit Creator and in battles. Adds a SKIN COLOR button next to the red/blue team swatches, with a picker, hex input, swatches and per-unit persistence.",
+  "dependencies": ["BepInEx-BepInExPack_TABS-5.4.16"]
+}

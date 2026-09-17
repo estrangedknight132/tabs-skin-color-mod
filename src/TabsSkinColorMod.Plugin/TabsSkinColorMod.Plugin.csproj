@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net46</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>TabsSkinColorMod.Plugin</RootNamespace>
+    <AssemblyName>TabsSkinColorMod</AssemblyName>
+    <Version>0.2.0</Version>
+    <Nullable>disable</Nullable>
+    <DebugType>none</DebugType>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameAssemblies)\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(GameAssemblies)\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameAssemblies)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(GameAssemblies)\UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(GameAssemblies)\UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.PhysicsModule"><HintPath>$(GameAssemblies)\UnityEngine.PhysicsModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(GameAssemblies)\UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>$(GameAssemblies)\UnityEngine.UIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sirenix.Serialization"><HintPath>$(GameAssemblies)\Sirenix.Serialization.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sirenix.Utilities"><HintPath>$(GameAssemblies)\Sirenix.Utilities.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes"><HintPath>$(GameAssemblies)\Sirenix.OdinInspector.Attributes.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Sirenix.Serialization.Config"><HintPath>$(GameAssemblies)\Sirenix.Serialization.Config.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BepInEx"><HintPath>$(BepInExCore)\BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(BepInExCore)\0Harmony.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TabsSkinColorMod.Core\TabsSkinColorMod.Core.csproj" />
+  </ItemGroup>
+
+  <Target Name="DeployToGame" AfterTargets="Build">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(TABS_DIR)\BepInEx\plugins\TabsSkinColorMod\" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(TargetDir)TabsSkinColorMod.Core.dll" DestinationFolder="$(TABS_DIR)\BepInEx\plugins\TabsSkinColorMod\" SkipUnchangedFiles="true" />
+    <Message Importance="high" Text="Deployed $(TargetFileName) + Core -> $(TABS_DIR)\BepInEx\plugins\TabsSkinColorMod\" />
+  </Target>
+
+</Project>

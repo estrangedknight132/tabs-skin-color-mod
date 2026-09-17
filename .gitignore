@@ -1,4 +1,18 @@
+# Build artifacts
+bin/
+obj/
+artifacts/
+
+# Portable .NET SDK (fetched by setup, ~200 MB)
+.tools/
+
+# Downloaded third-party binaries (BepInEx zip + game reference DLLs)
+third_party/
+
+# Generated offline metadata dumps (rebuild with tools/MetaDump)
+docs/meta/
+
+# Env / OS noise
 .env
 __pycache__/
-build/
 .DS_Store

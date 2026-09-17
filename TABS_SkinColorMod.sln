@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{49EAF55A-DF2A-427A-8A2D-22BC64D1ECCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabsSkinColorMod.Core", "src\TabsSkinColorMod.Core\TabsSkinColorMod.Core.csproj", "{06FB3B4C-1CAA-4A7D-BB4C-5F407BDF04D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{68AB9920-FB72-4718-B2B7-414E457B228B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabsSkinColorMod.Core.Tests", "tests\TabsSkinColorMod.Core.Tests\TabsSkinColorMod.Core.Tests.csproj", "{2DEC9AF1-C894-4C95-BFCD-D329A30C6247}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F456F2AA-A387-4BE7-8CA2-D756E53697A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabsSkinColorMod.MetaDump", "tools\MetaDump\TabsSkinColorMod.MetaDump.csproj", "{3CBAAD00-9D91-4911-AA6F-AF7276D3013A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabsSkinColorMod.Plugin", "src\TabsSkinColorMod.Plugin\TabsSkinColorMod.Plugin.csproj", "{264907F7-48B7-4BF9-BB68-74EB4942EA52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabsSkinColorMod.TestsRunner", "tests\TabsSkinColorMod.TestsRunner\TabsSkinColorMod.TestsRunner.csproj", "{C06CCC9C-ABE9-4EA6-88F3-A5196DB52FBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06FB3B4C-1CAA-4A7D-BB4C-5F407BDF04D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06FB3B4C-1CAA-4A7D-BB4C-5F407BDF04D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06FB3B4C-1CAA-4A7D-BB4C-5F407BDF04D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06FB3B4C-1CAA-4A7D-BB4C-5F407BDF04D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DEC9AF1-C894-4C95-BFCD-D329A30C6247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DEC9AF1-C894-4C95-BFCD-D329A30C6247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DEC9AF1-C894-4C95-BFCD-D329A30C6247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DEC9AF1-C894-4C95-BFCD-D329A30C6247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CBAAD00-9D91-4911-AA6F-AF7276D3013A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CBAAD00-9D91-4911-AA6F-AF7276D3013A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CBAAD00-9D91-4911-AA6F-AF7276D3013A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CBAAD00-9D91-4911-AA6F-AF7276D3013A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264907F7-48B7-4BF9-BB68-74EB4942EA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264907F7-48B7-4BF9-BB68-74EB4942EA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264907F7-48B7-4BF9-BB68-74EB4942EA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264907F7-48B7-4BF9-BB68-74EB4942EA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06CCC9C-ABE9-4EA6-88F3-A5196DB52FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06CCC9C-ABE9-4EA6-88F3-A5196DB52FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06CCC9C-ABE9-4EA6-88F3-A5196DB52FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06CCC9C-ABE9-4EA6-88F3-A5196DB52FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{06FB3B4C-1CAA-4A7D-BB4C-5F407BDF04D1} = {49EAF55A-DF2A-427A-8A2D-22BC64D1ECCD}
+		{2DEC9AF1-C894-4C95-BFCD-D329A30C6247} = {68AB9920-FB72-4718-B2B7-414E457B228B}
+		{3CBAAD00-9D91-4911-AA6F-AF7276D3013A} = {F456F2AA-A387-4BE7-8CA2-D756E53697A7}
+		{264907F7-48B7-4BF9-BB68-74EB4942EA52} = {49EAF55A-DF2A-427A-8A2D-22BC64D1ECCD}
+		{C06CCC9C-ABE9-4EA6-88F3-A5196DB52FBF} = {68AB9920-FB72-4718-B2B7-414E457B228B}
+	EndGlobalSection
+EndGlobal
