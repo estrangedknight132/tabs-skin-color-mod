@@ -16,3 +16,4 @@ docs/meta/
 .env
 __pycache__/
 .DS_Store
+.freebuff/
